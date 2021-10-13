@@ -4,18 +4,25 @@
 
 <script>
 export default {
-    
+    props: {
+        id: {
+            type: Number,
+            required: true
+        }
+    },
+
     data() {
         return {
-            id: null
+            //id: null
         }
     },
 
     created() {
-        const { id } = this.$route.params
+        // const { id } = this.$route.params
+        // console.log(id)
+        // this.id = id
 
-        console.log(id)
-        this.id = id
+        // console.log(this.$attrs)
     }
 }
 </script>
